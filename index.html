@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <nav class="nav-bar">
-        <h3>Sports<span>Xtra</span></h3>
+        <div><i class="fa-solid fa-person-half-dress"></i><span>Gender-predict</span></div> 
+            
         <div class="nav-edit">
             <a href="#">Home</a>
-            <a href="#">Live Score</a>
+            <a href="#">About</a>
             <a href="#">Latest News</a>
-            <a href="#">about</a>
         </div>
     </nav>
 
-    <section class="hero-section">
-        <button class="button-edit">search any events and fixtures</button>
-        <div>match highlights</div>
-
-    </section>
-
-    <section class="live-score">
-        <div class="callender-div">
-            <div>callender</div>
-            <div>top leagues</div>
-            <div>all leagues</div>
+    <section class="hero-section about-site">
+        <div class="form-container">
+            <h2>Predict Gender Based on Name</h2>
+            <form id="gender-form">
+                <input type="text" id="name-input" placeholder="Enter a name..." required>
+                <button type="submit">Predict</button>
+            </form>
+            <div id="result"></div>
         </div>
-
-        <div class="score-div">live score</div>
-
-        <div class="featured-div">
-            <div>featured matvches</div>
-            <div>Top players</div>
-        </div> 
     </section>
 
-    
-
-    <section>
-        <div>about site</div>
-    </section>
-    
-    <footer>
+    <footer class="footer-edit">
         <h1>footer goes here</h1>
     </footer>
 
-    <script src="./index.js">javascript</script>
+    <script src="./script.js">javascript</script>
 </body>
+
 </html>
