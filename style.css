@@ -34,9 +34,11 @@
     background-image: url(./IMG/family2.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.8; /* Apply the opacity to the image */
+    opacity: 0.8; /* Keep the opacity to slightly dim the image */
+    filter: blur(2px); /* Apply blur effect */
     z-index: -1; /* Ensure the image stays behind other content */
 }
+
 
 
 .background-image{
@@ -75,7 +77,7 @@ body {
 }
 
 .form-container h2{
-    color: #3E3F40;
+    color: black;
 }
 
 
